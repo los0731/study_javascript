@@ -6,10 +6,19 @@
   </head>
   <body>
     <script type="text/javascript">
-    numbering = function () {
-      for (var i = 0; i < 10; i++) {
-        document.write(i);
-      }
+    function get_members() {
+        return [
+            '박기선',
+            '배동희',
+            '류형환',
+            '김경열'
+        ];
+    }
+
+    members = get_members();
+
+    for (var i = 0; i < members.length; i++) {
+        document.write("<h1>" + members[i].toUpperCase() + "</h1>");
     }
 
     </script>
